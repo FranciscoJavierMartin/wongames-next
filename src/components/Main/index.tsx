@@ -1,7 +1,7 @@
 export default function Main() {
   return (
     <main>
-      <h1>Advanced React</h1>
+      <h1>Wongames</h1>
     </main>
   );
 }

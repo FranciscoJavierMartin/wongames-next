@@ -6,7 +6,7 @@ describe('<Main/>', () => {
     render(<Main />);
 
     expect(
-      screen.getByRole('heading', { name: /advanced react/i }),
+      screen.getByRole('heading', { name: /wongames/i }),
     ).toBeInTheDocument();
   });
 });
