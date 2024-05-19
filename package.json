@@ -11,7 +11,7 @@
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
     "test:unit": "vitest run",
     "test": "vitest",
-    "storybook": "storybook dev -p 6006 --no-open --disable-telemetry",
+    "storybook": "storybook dev -p 6006 --no-open --disable-telemetry --exact-port",
     "build-storybook": "storybook build"
   },
   "dependencies": {
