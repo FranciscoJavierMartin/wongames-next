@@ -12,7 +12,8 @@
     "test:unit": "vitest run",
     "test": "vitest",
     "storybook": "storybook dev -p 6006 --no-open --disable-telemetry",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "generate": "npx plop --plopfile generators/plopfile.js"
   },
   "dependencies": {
     "next": "14.2.3",
@@ -43,6 +44,7 @@
     "eslint-plugin-storybook": "^0.8.0",
     "globals": "^15.2.0",
     "jsdom": "^24.0.0",
+    "plop": "^4.0.1",
     "postcss": "^8",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",
