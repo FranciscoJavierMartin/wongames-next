@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss';
-import wongamesTheme from './wongames-theme';
+import wongamesTheme from './src/wongames-theme';
 
 const config: Config = {
   content: [
