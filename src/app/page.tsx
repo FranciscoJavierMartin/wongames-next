@@ -1,7 +1,5 @@
+import Logo from '@/components/Logo';
+
 export default function Home() {
-  return (
-    <main>
-      <h1>Wongames Next</h1>
-    </main>
-  );
+  return <Logo />;
 }
