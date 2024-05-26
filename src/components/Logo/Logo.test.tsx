@@ -2,11 +2,12 @@ import { render, screen } from '@testing-library/react';
 import Logo from '.';
 
 describe('<Logo/>', () => {
-  it('should render the heading', () => {
+  it('should render a white label by default', () => {
     render(<Logo />);
 
-    expect(
-      screen.getByRole('heading', { name: /wongames/i }),
-    ).toBeInTheDocument();
+    expect(screen.getByLabelText(/Won Games/i)).toHaveClass('text-white');
+    expect(screen.getByLabelText(/Won Games/i)).toHaveStyle({
+      color: 'rgb(250 250 250/1)',
+    });
   });
 });

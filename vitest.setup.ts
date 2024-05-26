@@ -1,2 +1,2 @@
 import '@testing-library/jest-dom';
-import '@/app/globals.css';
+import './src/app/globals.css';
