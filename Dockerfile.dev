@@ -4,6 +4,10 @@ WORKDIR /app
 
 VOLUME [ "/app/node_modules" ]
 
+COPY postcss.config.cjs .
+
+COPY panda.config.ts .
+
 CMD [ "/bin/sh", "-c", "npm install && npm run dev" ]
 
 EXPOSE 3000

@@ -6,6 +6,10 @@ WORKDIR /app
 
 VOLUME [ "/app/node_modules" ]
 
+COPY postcss.config.cjs .
+
+COPY panda.config.ts .
+
 COPY package*.json .
 
 RUN npm install

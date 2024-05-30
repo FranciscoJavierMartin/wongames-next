@@ -1,5 +1,9 @@
-import Logo from '@/components/Logo';
+import { css } from '../../styled-system';
 
 export default function Home() {
-  return <Logo />;
+  return (
+    <div>
+      <h1 className={css({ fontSize: '2xl' })}>Wongames</h1>
+    </div>
+  );
 }
