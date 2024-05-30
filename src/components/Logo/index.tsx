@@ -1,6 +1,9 @@
 import clsx from 'clsx';
 
-export type LogoProps = {
+export interface LogoProps {
+  /**
+   * Is this the principal call to action on the page?
+   */
   color?: 'white' | 'black';
   size?: 'normal' | 'large';
   hideOnMobile?: boolean;
