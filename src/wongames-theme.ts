@@ -1,5 +1,3 @@
-import type { Config } from 'tailwindcss';
-
 export default {
   theme: {
     grid: {
@@ -52,4 +50,4 @@ export default {
       alwaysOnTop: '50',
     },
   },
-} satisfies Partial<Config>;
+};
