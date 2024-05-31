@@ -3,10 +3,10 @@ import Heading from '.';
 
 describe('<Heading/>', () => {
   it('should render the heading', () => {
-    render(<Heading />);
+    render(<Heading>Most popular</Heading>);
 
     expect(
-      screen.getByRole('heading', { name: /wongames/i }),
+      screen.getByRole('heading', { name: /most popular/i }),
     ).toBeInTheDocument();
   });
 });
