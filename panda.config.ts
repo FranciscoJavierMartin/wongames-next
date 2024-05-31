@@ -1,4 +1,20 @@
-import { defineConfig } from '@pandacss/dev';
+import { defineConfig, defineGlobalStyles } from '@pandacss/dev';
+
+const globalCss = defineGlobalStyles({
+  '*': {
+    margin: 0,
+    padding: 0,
+    boxSizing: 'border-box',
+    '-webkit-font-smoothing': 'antialiased',
+    '-moz-osx-font-smoothing': 'grayscale',
+  },
+  html: {
+    fontSize: '62.5%',
+  },
+  'html, body': {
+    height: '100%',
+  },
+});
 
 export default defineConfig({
   // Whether to use css reset
@@ -23,6 +39,9 @@ export default defineConfig({
           lightGray: { value: '#EAEAEA' },
           gray: { value: '#8F8F8F' },
           darkGray: { value: '#2E2F42' },
+        },
+        fonts: {
+          poppins: { value: 'var(--font-poppins-400)' },
         },
         fontSizes: {
           xsmall: { value: '1.2rem' },
@@ -59,4 +78,5 @@ export default defineConfig({
 
   // The output directory for your css system
   outdir: 'styled-system',
+  globalCss,
 });

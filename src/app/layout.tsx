@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html lang='en' className={PoppinsRegular.variable}>
       <body>{children}</body>
     </html>
   );
