@@ -1,4 +1,5 @@
 import { PropsWithChildren } from 'react';
+import * as S from './Heading.styles';
 
 export type HeadingProps = {
   color?: 'white' | 'black';
@@ -12,5 +13,5 @@ export default function Heading({
   lineLeft = false,
   lineBottom = false,
 }: PropsWithChildren<HeadingProps>) {
-  return <h2>{children}</h2>;
+  return <S.Wrapper color={color}>{children}</S.Wrapper>;
 }
