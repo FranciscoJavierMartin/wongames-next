@@ -20,7 +20,7 @@ export default function Heading({
         'text-black': color === 'black',
         'border-l-[0.7rem] border-solid border-l-secondary pl-xxsmall':
           lineLeft,
-        'relative mb-medium after:absolute after:bottom-[-1rem] after:left-[0px] after:w-[5rem] after:border-[0.4rem] after:border-solid after:border-primary':
+        'relative mb-medium after:absolute after:bottom-[-0.5rem] after:left-[0px] after:w-[5rem] after:border-b-[0.4rem] after:border-solid after:border-b-primary':
           lineBottom,
       })}
     >
