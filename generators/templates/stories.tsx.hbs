@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import {{pascalCase name}}, { type {{pascalCase name}}Props } from '.';
+import {{pascalCase name}} from '.';
 
 const meta: Meta<typeof {{pascalCase name}}> = {
   title: '{{pascalCase name}}',
@@ -7,8 +7,13 @@ const meta: Meta<typeof {{pascalCase name}}> = {
   parameters: {
     layout: 'fullscreen',
   },
+  tags: ['autodocs'],
 };
 
 export default meta;
 
-export const Default: StoryObj<typeof {{pascalCase name}}> = {};
+export const Default: StoryObj<typeof {{pascalCase name}}> = {
+  args: {
+
+  }
+};
