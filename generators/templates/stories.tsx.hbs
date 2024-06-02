@@ -7,8 +7,13 @@ const meta: Meta<typeof {{pascalCase name}}> = {
   parameters: {
     layout: 'fullscreen',
   },
+  tags: ['autodocs'],
 };
 
 export default meta;
 
-export const Default: StoryObj<typeof {{pascalCase name}}> = {};
+export const Default: StoryObj<typeof {{pascalCase name}}> = {
+  args: {
+
+  }
+};
