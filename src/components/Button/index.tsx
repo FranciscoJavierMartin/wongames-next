@@ -4,12 +4,14 @@ import clsx from 'clsx';
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   size?: 'small' | 'medium' | 'large';
   fullWidth?: boolean;
+  icon: JSX.Element;
 };
 
 export default function Button({
   children,
   size = 'medium',
   fullWidth = false,
+  icon,
   ...props
 }: ButtonProps) {
   return (
@@ -22,9 +24,11 @@ export default function Button({
           'h-large px-medium text-small': size === 'medium',
           'h-[5rem] px-xlarge text-medium': size === 'large',
           'w-full': fullWidth,
+          'button-with-icon': !!icon,
         },
       ])}
     >
+      {!!icon && icon}
       {!!children && <span>{children}</span>}
     </button>
   );

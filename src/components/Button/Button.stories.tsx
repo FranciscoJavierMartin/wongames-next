@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import Button from '.';
+import AddShoppingCart from '@/components/icons/AddShoppingCart';
 
 const meta: Meta<typeof Button> = {
   title: 'Button',
@@ -47,5 +48,12 @@ export const Large: StoryObj<typeof Button> = {
 export const FullWidth: StoryObj<typeof Button> = {
   args: {
     children: 'Buy now',
+  },
+};
+
+export const WithIcon: StoryObj<typeof Button> = {
+  args: {
+    children: 'Buy now',
+    icon: <AddShoppingCart />,
   },
 };
