@@ -3,9 +3,14 @@ import { PropsWithChildren } from 'react';
 
 export type ButtonProps = PropsWithChildren<{
   size?: 'small' | 'medium' | 'large';
+  fullWidth?: boolean;
 }>;
 
-export default function Button({ children, size = 'medium' }: ButtonProps) {
+export default function Button({
+  children,
+  size = 'medium',
+  fullWidth = false,
+}: ButtonProps) {
   return (
     <button
       className={clsx([
@@ -14,6 +19,7 @@ export default function Button({ children, size = 'medium' }: ButtonProps) {
           'h-[3rem] px-xxsmall text-xsmall': size === 'small',
           'h-large px-medium text-small': size === 'medium',
           'h-[5rem] px-xlarge text-medium': size === 'large',
+          'w-full': fullWidth,
         },
       ])}
     >
