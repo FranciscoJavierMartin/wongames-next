@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import Button from '.';
+import AddShoppingCart from '../icons/AddShoppingCart';
 
 describe('<Button/>', () => {
   it('should render the medium size by default', () => {
@@ -41,5 +42,14 @@ describe('<Button/>', () => {
     expect(screen.getByRole('button', { name: /buy now/i })).toHaveStyle({
       width: '100%',
     });
+  });
+
+  it('should render an icon version', () => {
+    render(
+      <Button icon={<AddShoppingCart data-testid='icon' />}>Buy now</Button>,
+    );
+
+    expect(screen.getByText(/buy now/i)).toBeInTheDocument();
+    expect(screen.getByTestId('icon')).toBeInTheDocument();
   });
 });

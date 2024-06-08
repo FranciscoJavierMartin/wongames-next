@@ -1,6 +1,8 @@
-export default function AddShoppingCart() {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default function AddShoppingCart(props: any) {
   return (
     <svg
+      {...props}
       xmlns='http://www.w3.org/2000/svg'
       fill='none'
       viewBox='0 0 24 24'

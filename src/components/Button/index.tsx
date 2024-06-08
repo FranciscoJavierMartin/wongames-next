@@ -4,7 +4,7 @@ import clsx from 'clsx';
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   size?: 'small' | 'medium' | 'large';
   fullWidth?: boolean;
-  icon: JSX.Element;
+  icon?: JSX.Element;
 };
 
 export default function Button({
