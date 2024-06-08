@@ -48,6 +48,7 @@ export const Large: StoryObj<typeof Button> = {
 export const FullWidth: StoryObj<typeof Button> = {
   args: {
     children: 'Buy now',
+    fullWidth: true,
   },
 };
 
